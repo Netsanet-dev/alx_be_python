@@ -6,10 +6,11 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
         return num1 * num2
     elif operation == "divide":
-        try:
+        if num2 == 0:
+            print("The denominator must be greater than zero")
+        else:
             return num1/num2
-        except ZeroDivisionError:
-                print("The denominator must be greater than zero")
+                
     else:
         print("Please enter the correct number")
     
