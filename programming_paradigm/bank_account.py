@@ -5,13 +5,11 @@ class BankAccount:
        
     def deposit(self, amount):
         BankAccount.balance = self.account_balance + amount
-        print(f"{self.account_balance} deposited")
-        return self.balance
+        return BankAccount.balance
     
     def withdraw(self, amount):
         BankAccount.balance = self.account_balance - amount
-        print(f"{self.account_balance} deposited")
-        return self.balance
+        return BankAccount.balance
     
     def display_balance(self):
        print(f"Current Balance: ${self.balance}")
