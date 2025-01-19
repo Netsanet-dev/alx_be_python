@@ -2,13 +2,13 @@ from simple_calculator import SimpleCalculator
 import unittest
 
 class Test_simple_calculator(unittest.TestCase):
-    def test_add(self):
+    def test_addition(self):
         self.calc = SimpleCalculator()
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(1, 0), 1)
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(2, -3), -1)
-    def test_subtract(self):
+    def test_subtraction(self):
         self.calc = SimpleCalculator()
         self.assertEqual(self.calc.subtract(1,1), 0)
         self.assertEqual(self.calc.subtract(-1,-1), 0)
