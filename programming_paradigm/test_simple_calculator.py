@@ -17,13 +17,13 @@ class Test_simple_calculator(unittest.TestCase):
         # if num minus string
         # if negative number
         pass
-    def test_multiply(self):
+    def test_multiplication(self):
         self.calc = SimpleCalculator()
         self.assertEqual(self.calc.multiply(2, 4), 8)
         self.assertEqual(self.calc.multiply(1, 0), 0)
         self.assertEqual(self.calc.multiply(1, 1), 1)
-        # if num times string
-    def teset_divide(self):
+        
+    def test_division(self):
         self.calc = SimpleCalculator()
         self.assertEqual(self.calc.divide(1, 0),None)
         self.assertEqual(self.calc.divide(1, 1),1)
