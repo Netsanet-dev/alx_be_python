@@ -1,25 +1,22 @@
 class BankAccount:
-    balance = 0
-    def __init__(self, account_balance):
-       self.account_balance = account_balance
+    def __init__(self, balance):
+       self.account_balance = balance
        
     def deposit(self, amount):
-        BankAccount.balance = self.account_balance + amount
-        return BankAccount.balance
-    
+        self.account_balance += amount
+
+        
     def withdraw(self, amount):
         if self.account_balance - amount <= 0:
             return False
         else:
-            BankAccount.balance = self.account_balance - amount
-            return BankAccount.balance
-    
+            self.account_balance -= amount
+            
     def display_balance(self):
-       print(f"Current Balance: ${self.balance}")
+       print(f"Current Balance: ${self.account_balance}")
 
 
 if __name__ == "__main__":
-    import sys
     from bank_account import BankAccount
     while True:
         command = input("command: ")
