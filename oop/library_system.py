@@ -17,7 +17,9 @@ class EBook(Book):
         self.file_size = file_size
         
 class Library:
-    books = []
+    def __init__(self):
+        self.books = []
+        
     def add_book(self, book):
         return Library.books.append(book)
         
