@@ -20,7 +20,7 @@ class EBook(Book):
         self.file_size = file_size
     
     def __str__(self):
-        return f"EBook: {self.title} {self.author}, File Size: {self.file_size}KB"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 class Library:
     def __init__(self):
         self.books = []
