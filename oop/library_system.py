@@ -14,11 +14,12 @@ class EBook(Book):
         self.file_size = file_size
         
 class Library:
+    books = []
     def add_book(self, book):
-        new_book = len(book)
-        books = Book(book)
-        return books
-    
+        return Library.books.append(book)
+        
     def list_books(self):
-        pass    
+        L = Library()
+        for item in L.books:
+            print(item)
     
